@@ -1,0 +1,39 @@
+测试结果：
+1. yl的华为测试机：api=26：
+基本的：com.cn.tfl.aidlkeeplive
+法1：com.cn.tfl.aidlkeeplive:jobhandler
+法2： com.cn.tfl.aidlkeeplive:remote
+法3：com.cn.tfl.aidlkeeplive:jobhandler3
+法4：无
+法5：无
+法6： com.cn.tfl.aidlkeeplive:remote
+法7：com.cn.tfl.aidlkeeplive:mynotify
+1测试结果：都无法保活
+
+
+2、ym的LGE nexus 5X：8.0.0  api=26：
+基本的：com.cn.tfl.aidlkeeplive
+法1：com.cn.tfl.aidlkeeplive:jobhandler  死了
+法2： com.cn.tfl.aidlkeeplive:remote  （杀不死：显示基本进程和该进程）
+执行完1后杀死进程再执行2的时候，杀死进程后，应用显示三个线程
+
+法3：com.cn.tfl.aidlkeeplive:jobhandler3
+杀死后只有该进程运行，基本进程死去了
+法4：无
+法5：无
+法6（和2一样：）： com.cn.tfl.aidlkeeplive:remote
+法7：com.cn.tfl.aidlkeeplive:mynotify
+杀死后只有该进程运行，基本进程死去了
+2的测试结果：法1，4，5都无法保活；2，3，6，7都可以，但是6（6基于2）是最好的；
+
+
+3、jz的Lenovo K900K900：4.2.2  api=17：
+基本的：com.cn.tfl.aidlkeeplive
+法1：闪退：java.lang.NoClassDefFoundError: android.app.job.JobScheduler
+法2： com.cn.tfl.aidlkeeplive:remote  （杀不死：显示基本进程和该进程）
+法3：  com.cn.tfl.aidlkeeplive:remote  （杀不死：显示基本进程和该进程）
+法4：闪退:java.lang.NoClassDefFoundError: android.app.job.JobScheduler
+法5：闪退:java.lang.NoClassDefFoundError: android.app.job.JobScheduler
+法6：（和2一样：）： com.cn.tfl.aidlkeeplive:remote
+法7：闪退:java.lang.NoClassDefFoundError: com.cn.tfl.aidlkeeplive.fun7.MyNotificationListenerService
+2的测试结果：法1，4，5，7都闪退；2，3，6都可以，但是6（6基于2）是最好的；

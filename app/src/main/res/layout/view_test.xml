@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- <View
+             android:layout_width="0dp"
+             android:layout_height="0dp"
+             android:layout_weight="1" />-->
+
+        <Button
+            android:id="@+id/btn_hide_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐藏测试按钮" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_test_1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="schedule" />
+
+        <Button
+            android:id="@+id/btn_test_1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="finish" />
+
+        <Button
+            android:id="@+id/btn_test_1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="cancel" />
+
+        <Button
+            android:id="@+id/btn_test_1_4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="enqueue" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_test_2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="btn_test_2" />
+
+        <Button
+            android:id="@+id/btn_test_3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="btn_test_3" />
+
+        <Button
+            android:id="@+id/btn_test_4"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="btn_test_4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_test_5_1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="初始化" />
+
+        <Button
+            android:id="@+id/btn_test_5_2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="startJobScheduler" />
+
+        <Button
+            android:id="@+id/btn_test_5_3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="stopJobScheduler" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_test_6"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="btn_test_6" />
+
+        <Button
+            android:id="@+id/btn_test_7"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="btn_test_7" />
+    </LinearLayout>
+
+</LinearLayout>
