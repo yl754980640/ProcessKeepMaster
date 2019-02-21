@@ -53,7 +53,11 @@
         <!-- 方法6  start-->
         <service
             android:name=".fun6.JobWakeUpService"
-            android:permission="android.permission.BIND_JOB_SERVICE"/>
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </service>
         <!-- 方法6  end-->
 
         <!-- 方法7  start-->
@@ -61,7 +65,8 @@
             android:name=".fun7.MyNotificationListenerService"
             android:enabled="true"
             android:exported="true"
-            android:process=":mynotify">
+            android:process=":mynotify"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
             <intent-filter android:priority="1000">
                 <!-- 系统启动完成后会调用-->
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -74,6 +79,12 @@
             </intent-filter>
         </service>
         <!-- 方法7  end-->
+
+        <receiver android:name=".mReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
